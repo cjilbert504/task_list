@@ -1,0 +1,8 @@
+<h1><%= @owner.name %>'s Task List</h1>
+
+<%= @list.name %>
+<% @tasks.each do |task| %>
+<%= task.content %> - <%= task.employee.name %>
+<% end %>
+
+    
